@@ -7,12 +7,12 @@ function lowerCaseDrivers(drivers) {
 
 
 
-//const drivers = ['Bobby Smith', 'Sammy Watkins', 'Sally Jenkins', 'Annette Sawyer', 'Sarah Hucklebee', 'bobby ridge'];
-
+const drivers = ['Bobby Smith', 'Sammy Watkins', 'Sally Jenkins', 'Annette Sawyer', 'Sarah Hucklebee', 'bobby ridge'];
+// try: new substring at ' '
 function nameToAttributes(drivers) {
   return drivers.map(function(driver) {
-    return Object.assign({}, driver, { firstName: driver, lastName: driver });
+    return Object.assign({}, driver, { firstName: driver.toLowerCase(), lastName: driver.toLowerCase });
   })
 }
 
-//nameToAttributes(drivers);
+nameToAttributes(drivers);
