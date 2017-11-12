@@ -9,8 +9,7 @@ const drivers = ['Bobby Smith', 'Sammy Watkins', 'Sally Jenkins', 'Annette Sawye
 
 function nameToAttributes(drivers) {
   return drivers.map(function(driver) {
-     let fullName = driver.split(' ')
-    return Object.assign({}, driver, {firstName: fullName[0] , lastName: fullName[1] });
+    return Object.assign({}, driver, {firstName: driver[0] , lastName: driver[1] });
   })
 }
 
